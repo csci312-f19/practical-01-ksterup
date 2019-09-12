@@ -15,7 +15,7 @@ describe('Determines age based on birthday', () => {
     Date.now = jest.fn(() => new Date('01 Jan 2018').valueOf());
   });
 
-  test('Returns 0 if birthday is today', () =>{
+  test('Returns 0 if birthday is today', () => {
     expect(birthday.howOld(new Date('01 Jan 2018'))).toBe(0);
   });
 
